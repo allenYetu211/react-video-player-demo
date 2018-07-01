@@ -1,0 +1,54 @@
+{
+  "name": "react-video-player",
+  "version": "0.0.1",
+  "description": "Fastly start developping your react component with TypeScript and Rollup",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/index.d.ts",
+  "styles": "lib/index.css",
+  "scripts": {
+    "build": " npm run clean:dist && NODE_ENV=production rollup -c",
+    "clean:dist": "rm -rf lib/*",
+    "watch": "rollup -cw",
+    "start": "parcel ./example/index.html",
+    "lint": "tslint --project tsconfig.json --project"
+  },
+  "author": {
+    "name": "Andre Goncalves",
+    "email": "andre@andregoncalves.com",
+    "url": "https://andregoncalves.com"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/video.js": "^6.2.7",
+    "autoprefixer": "^8.0.0",
+    "parcel-bundler": "^1.9.3",
+    "postcss-clean": "latest",
+    "prettier": "^1.13.6",
+    "react": "^16.0.0",
+    "rollup": "latest",
+    "rollup-plugin-babel-minify": "^5.0.0",
+    "rollup-plugin-babili": "^3.1.1",
+    "rollup-plugin-commonjs": "latest",
+    "rollup-plugin-css-only": "latest",
+    "rollup-plugin-livereload": "latest",
+    "rollup-plugin-node-resolve": "latest",
+    "rollup-plugin-postcss": "latest",
+    "rollup-plugin-replace": "latest",
+    "rollup-plugin-sass": "^0.8.0",
+    "rollup-plugin-serve": "latest",
+    "rollup-plugin-typescript2": "latest",
+    "rollup-watch": "latest",
+    "tslib": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "react-dom": "^16.4.1",
+    "video.js": "^7.0.3",
+    "videojs-contrib-hls": "^5.14.1",
+    "videojs-flash": "^2.1.0",
+    "videojs-hotkeys": "^0.2.21"
+  }
+}
